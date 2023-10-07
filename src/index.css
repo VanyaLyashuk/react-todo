@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .checked {
+    @apply relative bg-blue-600 before:content-[''] before:absolute before:w-[5px] before:h-0.5 before:bg-white before:rotate-[45deg] before:left-[4px] before:top-[10px] after:content-[''] after:absolute after:w-[9px] after:h-0.5 after:bg-white after:rotate-[-45deg] after:left-[6px] after:top-[8px];
+  }
+  .cancel-btn {
+    @apply hover:bg-red-600 hover:text-white;
+  }
+  .confirm-btn {
+    @apply hover:bg-blue-600 hover:text-white;
+  }
+  .plus-btn {
+    @apply w-[20px] h-[20px] transition border rounded-full flex-shrink-0 absolute left-4 before:content-[''] before:absolute before:w-[10px] before:h-[2px] before:bg-gray-200 before:top-[50%] before:left-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-[2px] after:content-[''] after:absolute after:w-[10px] after:h-[2px] after:bg-gray-200 after:left-[50%] after:top-[50%] after:translate-y-[-50%] after:translate-x-[-50%] after:rounded-[2px] after:rotate-90 hover:bg-blue-600 focus:hover:border-none hover:before:bg-white hover:after:bg-white;
+  }
+  .plus-btn.empty-field {
+    @apply bg-red-500 border-red-500 focus:border-none before:bg-white after:bg-white;
+  }
+  .crossed-out {
+    @apply relative before:transition-all before:content-['']  before:w-0 before:h-px before:bg-black before:absolute before:top-2/4 before:left-0 before:translate-y-2/4;
+  }
+  .crossed-out.crossed-out-full {
+    @apply before:w-full
+  }
+}
