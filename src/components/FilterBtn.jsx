@@ -3,7 +3,7 @@ import { handleFilterChange, filterTodos } from "../store/todoSlice";
 import classNames from "classnames";
 
 const FilterBtn = ({ name }) => {
-  const { activeFilter } = useSelector((state) => state.todos);
+  const { activeFilter } = useSelector((state) => state.todos.todos);
   const dispatch = useDispatch();
 
   const filterBtnsClasses = classNames("underline transition", {

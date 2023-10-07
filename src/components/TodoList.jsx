@@ -2,8 +2,8 @@ import { useSelector } from "react-redux";
 import TodoListItem from "./TodoListItem";
 
 const TodoList = () => {
-  const {filteredTodos} = useSelector(state => state.todos);
-  const todoItems = filteredTodos.map(({id, text, editableText, completed, isEditing, editFormErr}) => {
+  const {filteredTodos} = useSelector(state => state.todos.todos);
+  let todoItems = filteredTodos ? filteredTodos.map(({id, text, editableText, completed, isEditing, editFormErr}) => {
     return (
       <TodoListItem
         key={id}
@@ -15,7 +15,7 @@ const TodoList = () => {
         editFormErr={editFormErr}
       />
     );
-  });
+  }) : null;
 
   return <ul>{todoItems}</ul>;
 };

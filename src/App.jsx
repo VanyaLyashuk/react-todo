@@ -7,7 +7,7 @@ import Filters from "./components/Filters";
 
 const App = () => {
   const dispatch = useDispatch();
-  const { todos } = useSelector((state) => state.todos);
+  const {todos} = useSelector(state => state.todos.todos);
 
   useEffect(() => {
     dispatch(filterTodos());

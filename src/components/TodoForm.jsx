@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 const TodoForm = () => {
   const dispatch = useDispatch();
-  const {text, addFormErr} = useSelector(state => state.todos);
+  const {text, addFormErr} = useSelector(state => state.todos.todos);
   
   const inputClasses = classNames(
     "w-full py-5 text-lg pr-7 pl-11 rounded-bl-md rounded-br-md placeholder:text-gray-300",
