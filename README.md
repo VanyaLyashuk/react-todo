@@ -9,7 +9,7 @@
 **React Todo** is a responsive, user-friendly application for managing daily tasks, created to practice and reinforce skills with Redux Toolkit in a real-world context. Users can add, edit, delete, and filter tasks to organize their to-do list effectively. The app also includes a keyboard navigation feature, enhancing accessibility and ease of use. All tasks are stored in local storage, so the list persists even after a page refresh.
 
 
-You can view the live demo of the project at: [React Todo App on](https://vanyalyashuk.github.io/react-todo/)
+You can view the live demo of the project at: [React Todo](https://vanyalyashuk.github.io/react-todo/)
 
 ![Home Page](./screenshots/main-page.png)
 
